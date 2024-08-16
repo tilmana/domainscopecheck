@@ -9,10 +9,10 @@ invalidDomains = []
 
 parser = argparse.ArgumentParser(description="Checks if domain(s) in a file are in scope based on IP(s) from another file")
 
-parser.add_argument('-c,', '-csv', '--csv', help='Defines whether files are separated by commas versus newlines', action="store_true")
-parser.add_argument('-o,', '-output', '--output', help='File to write output to')
-parser.add_argument('-d,', '--domains', '--domain', help='Domain file to read from', required=True)
-parser.add_argument('-s,', '--scope', '--ips', '--ip', help='IP/Scope file to read from', required=True)
+parser.add_argument('-c', '-csv', '--csv', help='Defines whether files are separated by commas versus newlines', action="store_true")
+parser.add_argument('-o', '-output', '--output', help='File to write output to')
+parser.add_argument('-d', '--domains', '--domain', help='Domain file to read from', required=True)
+parser.add_argument('-s', '--scope', '--ips', '--ip', help='IP/Scope file to read from', required=True)
 
 args = parser.parse_args()
 
